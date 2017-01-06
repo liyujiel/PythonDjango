@@ -24,5 +24,6 @@ from article.views import home,detail
 urlpatterns = (
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home, name ='home'),
-    url(r'^(?P<my_args>\d+)/$',detail, name ='detail'),
+#    url(r'^(?P<my_args>\d+)/$',detail, name ='detail'),
+#    url(r'^test/$', test, name = 'test'),
 )
