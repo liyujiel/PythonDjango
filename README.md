@@ -1,4 +1,8 @@
 # PythonDjango
 Use Jango build a blog
-#http://localhost:9000/admin/
-#nhttp://localhost:9000/
+
+
+http://localhost:9000/admin/
+
+
+http://localhost:9000/
