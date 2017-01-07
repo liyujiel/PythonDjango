@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-#import markdown
+import markdown
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -35,7 +35,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'bootstrap_admin',
-#    'markup_deprecated',
+    'markdown',
+#    'custom_markdown',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
