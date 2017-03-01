@@ -1,5 +1,5 @@
 # PythonDjango
-Use Jango build a blog
+Use Django build a blog
 
 
 http://localhost:9000/admin/
