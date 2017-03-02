@@ -6,3 +6,4 @@ flask
 django
 markdown
 bootstrap_admin
+dj_database_url
