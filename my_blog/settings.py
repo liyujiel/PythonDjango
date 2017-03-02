@@ -16,7 +16,7 @@ import markdown
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ALLOWED_HOSTS = ['alexli0717.herokuapp.com']
+ALLOWED_HOSTS = ['alexli0717.herokuapp.com','0.0.0.0']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -26,8 +26,6 @@ SECRET_KEY = 'y0^i6cjy2-@##3v-t678%nh8=tm$0z=2d*vo#yo@i^sk+5eex-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
