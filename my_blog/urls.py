@@ -19,6 +19,8 @@ from django.conf.urls import *
 from django.contrib import admin
 from article.models import Article
 from article.views import home,detail,archives,about_me,search_tag,blog_search,RSSFeed
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = (
@@ -29,7 +31,6 @@ urlpatterns = (
     url(r'^aboutme/$',about_me,name='about_me'),
     url(r'^tag(?P<tag>\w+)/$', search_tag, name = 'search_tag'),
     url(r'^search/$', blog_search,name='search'),
-    url(r'^feed/$', RSSFeed(), name = "RSS"),  #新添加的urlconf, 并将name设置为RSS, 方便在模板中使用url
-#    url(r'^(?P<my_args>\d+)/$',detail, name ='detail'),
-#    url(r'^test/$', test, name = 'test'),
-)
+    url(r'^feed/$', RSSFeed(), name = "RSS"), 
+    {'document_root', settings.STATIC_ROOT},
+) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
