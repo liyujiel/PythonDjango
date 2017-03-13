@@ -34,7 +34,6 @@ DEBUG = True
 INSTALLED_APPS = [
     'bootstrap_admin',
     'markdown',
-#    'custom_markdown',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,12 +50,13 @@ from django.conf import global_settings
 
 BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES  = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
