@@ -27,7 +27,6 @@ SECRET_KEY = 'y0^i6cjy2-@##3v-t678%nh8=tm$0z=2d*vo#yo@i^sk+5eex-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 # Application definition
 #import bootstrap-admin
